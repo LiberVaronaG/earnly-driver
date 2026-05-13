@@ -42,11 +42,11 @@ git init
 git add .
 git commit -m "feat: initial Jekyll site for privacy + support"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/earnly-driver.git
+git remote add origin https://github.com/earnlydriver-code/earnly-driver.git
 git push -u origin main
 ```
 
-Replace `YOUR-USERNAME` with your GitHub username.
+Replace `earnlydriver-code` with your GitHub username.
 
 ### Step 3 — Enable GitHub Pages
 
@@ -54,16 +54,16 @@ Replace `YOUR-USERNAME` with your GitHub username.
 2. Left sidebar: **Pages**
 3. **Source:** Deploy from a branch
 4. **Branch:** `main` / `(root)` — click **Save**
-5. Wait ~30–60 seconds. The page will refresh with a green box: *"Your site is live at https://YOUR-USERNAME.github.io/earnly-driver/"*
+5. Wait ~30–60 seconds. The page will refresh with a green box: *"Your site is live at https://earnlydriver-code.github.io/earnly-driver/"*
 
 ### Step 4 — Verify the URLs work
 
 Open these in your browser and confirm they load:
 
-- `https://YOUR-USERNAME.github.io/earnly-driver/privacy/`
-- `https://YOUR-USERNAME.github.io/earnly-driver/privacidad/`
-- `https://YOUR-USERNAME.github.io/earnly-driver/support/`
-- `https://YOUR-USERNAME.github.io/earnly-driver/soporte/`
+- `https://earnlydriver-code.github.io/earnly-driver/privacy/`
+- `https://earnlydriver-code.github.io/earnly-driver/privacidad/`
+- `https://earnlydriver-code.github.io/earnly-driver/support/`
+- `https://earnlydriver-code.github.io/earnly-driver/soporte/`
 
 If you see formatted pages with the Cayman theme, you're done. If you see the raw markdown, GitHub Pages hasn't finished building — wait another minute and refresh.
 
@@ -71,13 +71,13 @@ If you see formatted pages with the Cayman theme, you're done. If you see the ra
 
 In ASC → **App Information** → **General Information**:
 
-- **Privacy Policy URL (English):** `https://YOUR-USERNAME.github.io/earnly-driver/privacy/`
-- **Privacy Policy URL (Spanish):** `https://YOUR-USERNAME.github.io/earnly-driver/privacidad/`
+- **Privacy Policy URL (English):** `https://earnlydriver-code.github.io/earnly-driver/privacy/`
+- **Privacy Policy URL (Spanish):** `https://earnlydriver-code.github.io/earnly-driver/privacidad/`
 
 In ASC → **App Information** → **Localized Information** → **Support URL**:
 
-- **Support URL (English):** `https://YOUR-USERNAME.github.io/earnly-driver/support/`
-- **Support URL (Spanish):** `https://YOUR-USERNAME.github.io/earnly-driver/soporte/`
+- **Support URL (English):** `https://earnlydriver-code.github.io/earnly-driver/support/`
+- **Support URL (Spanish):** `https://earnlydriver-code.github.io/earnly-driver/soporte/`
 
 ---
 
