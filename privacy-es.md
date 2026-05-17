@@ -6,12 +6,12 @@ permalink: /privacidad/
 
 # Política de Privacidad
 
-**Última actualización:** 13 de mayo de 2026
-**Fecha de entrada en vigor:** 13 de mayo de 2026
+**Última actualización:** 17 de mayo de 2026
+**Fecha de entrada en vigor:** 17 de mayo de 2026
 
 Earnly Driver ("la App") es desarrollada y operada por **Liber Varona** ("nosotros" o "el Desarrollador"). Esta Política de Privacidad describe cómo la App maneja tu información.
 
-**Resumen:** Earnly Driver funciona completamente en tu iPhone. No tiene servidores, ni cuentas de usuario, ni analítica, ni publicidad. Tus datos de turnos y tu historial de ubicación nunca salen de tu dispositivo. No podemos ver, acceder ni recuperar tus datos.
+**Resumen:** Earnly Driver funciona completamente en tu iPhone. No tiene servidores, ni cuentas de usuario, ni analítica, ni publicidad. Tus datos de turnos y tu historial de ubicación permanecen en tu dispositivo de forma predeterminada. Lo único que puede salir de tu dispositivo lo hace solo cuando tú lo eliges explícitamente: al exportar un CSV, o al activar el ajuste opcional "Buscar direcciones del turno" (desactivado por defecto), que envía únicamente las coordenadas de inicio y fin de tu turno a Apple para obtener una dirección. No podemos ver, acceder ni recuperar tus datos, y el Desarrollador nunca los recibe.
 
 ---
 
@@ -21,18 +21,16 @@ Earnly Driver recopila únicamente la información que tú ingresas explícitame
 
 ### 1.1 Información del turno que ingresas
 - Hora de inicio y fin del bloque de turno
-- Ganancias estimadas y reales (montos en dólares)
-- Propinas
-- Millaje (cuando no se rastrea por GPS)
+- Millaje (cuando se edita manualmente; de lo contrario, se calcula desde el GPS)
 - Notas personales que decidas agregar al turno
-- Gastos del vehículo que registres
+- Motivo de cualquier edición que hagas a un turno guardado (para registro de auditoría)
 
 ### 1.2 Datos de ubicación (solo durante un turno activo)
 Cuando tocas **Iniciar Turno**, la App comienza a registrar la ubicación de tu dispositivo para calcular la distancia recorrida, la duración y la tarifa efectiva por hora. El rastreo de ubicación se detiene automáticamente cuando tocas **Finalizar Turno**.
 
 - La ubicación se recopila **únicamente** mientras un turno está activo y tú lo has iniciado explícitamente.
 - La ubicación se recopila en segundo plano para que la App pueda continuar rastreando cuando tu pantalla esté bloqueada o tengas otra app abierta durante tu turno.
-- **No** transmitimos tu ubicación fuera del dispositivo bajo ninguna circunstancia.
+- **No** transmitimos tu ubicación fuera del dispositivo, con una única excepción opcional que tú controlas: si activas **Buscar direcciones del turno** en Ajustes (desactivado por defecto), solo se envían las coordenadas del inicio y fin de tu turno al servicio de geocodificación de Apple para obtener una dirección. No se envía nada más, y nunca se envía nada al Desarrollador. Consulta la Sección 4.
 
 ### 1.3 Información que NO recopilamos
 - No recopilamos tu nombre, correo electrónico, número de teléfono, foto, ni ninguna otra información identificable.
@@ -50,7 +48,7 @@ Cuando tocas **Iniciar Turno**, la App comienza a registrar la ubicación de tu 
 Toda la información descrita en la Sección 1 se almacena **localmente** en tu iPhone usando el framework SwiftData de Apple. Los datos residen en el contenedor privado (sandbox) de la App, cifrados en reposo por iOS.
 
 - Los datos **no** se sincronizan con iCloud a menos que una versión futura de la App ofrezca esa función y tú actives la opción explícitamente. La versión actual no sincroniza datos a ningún lugar.
-- Los datos **no** se transmiten a ningún servidor operado por el Desarrollador ni por terceros.
+- Salvo la búsqueda de direcciones opcional descrita en la Sección 4, los datos **no** se transmiten a ningún servidor. El Desarrollador no opera ningún servidor y nunca recibe tus datos bajo ninguna circunstancia.
 - Los datos se incluyen en el respaldo estándar de tu iPhone (iCloud Backup o respaldo local cifrado) solo si tú tienes esos respaldos activados en los Ajustes de tu iPhone. Esos respaldos están controlados completamente por Apple y tu Apple ID; el Desarrollador no tiene acceso a ellos.
 
 ---
@@ -59,10 +57,9 @@ Toda la información descrita en la Sección 1 se almacena **localmente** en tu 
 
 La App usa los datos que ingresas y los datos de ubicación que autorizas **únicamente** para los fines por los que tú la iniciaste:
 
-- Calcular ganancias totales por turno, por semana y por mes
-- Calcular tarifa efectiva por hora (ganancias ÷ tiempo de turno)
-- Calcular costo por milla y ganancia neta
-- Mostrar tu historial de turnos y tendencias de ganancias
+- Calcular el total de millas por turno, semana y mes
+- Estimar la deducción de millaje del IRS basada en la tarifa estándar
+- Mostrar tu historial de turnos
 - Exportar tus propios datos cuando tú decidas hacerlo (exportación CSV a la app Archivos o vía el menú Compartir)
 
 No usamos tus datos para ningún otro propósito. No te perfilamos, no te puntuamos, no vendemos información sobre ti, ni compartimos tus datos con nadie.
@@ -73,10 +70,11 @@ No usamos tus datos para ningún otro propósito. No te perfilamos, no te puntua
 
 **No** vendemos, rentamos, intercambiamos ni compartimos tus datos personales con ningún tercero.
 
-Existen dos situaciones en las que tus datos pueden salir del dispositivo, y ambas ocurren únicamente por tu instrucción explícita:
+Existen tres situaciones en las que tus datos pueden salir del dispositivo, y cada una ocurre únicamente por tu instrucción explícita:
 
 1. **Exportación CSV.** Puedes tocar **Exportar Datos** para generar un archivo CSV con tu historial de turnos. La exportación se entrega vía el menú Compartir de iOS, y tú eliges el destino (correo, Archivos, AirDrop, etc.). Hasta que tú inicies esta exportación y elijas un destino, tus datos permanecen en tu dispositivo.
 2. **Respaldo estándar del iPhone.** Como se indica en la Sección 2, tus datos se incluyen en el respaldo estándar de tu iPhone si tienes los respaldos activados. Esto se rige por los términos de iCloud de Apple y los ajustes de tu dispositivo, no por nosotros.
+3. **Búsqueda de direcciones opcional.** El ajuste **Buscar direcciones del turno** está **desactivado por defecto**. Si lo activas, cada vez que terminas un turno la app envía únicamente las coordenadas GPS de inicio y fin de ese turno al servicio de geocodificación de Apple para obtener una dirección legible que se muestra en el Detalle del Turno. Solo se envían esos dos pares de coordenadas; ningún otro dato del turno, y nada al Desarrollador. Puedes desactivarlo en cualquier momento en Ajustes, y nunca se ejecuta mientras está desactivado. Usa CLGeocoder de Apple y está sujeto a los términos de privacidad de Apple.
 
 ---
 
@@ -128,7 +126,7 @@ Como no transmitimos ni almacenamos tus datos en ningún servidor, no existe rie
 
 Earnly Driver no se integra con ningún SDK de terceros, plataforma de analítica, red de publicidad ni herramienta de redes sociales.
 
-Earnly Driver utiliza los frameworks propios de Apple (CoreLocation, MapKit, SwiftData, ActivityKit, UserNotifications). Las prácticas de privacidad de Apple para estos frameworks se describen en la política de privacidad propia de Apple en <https://www.apple.com/legal/privacy/>.
+Earnly Driver utiliza los frameworks propios de Apple (CoreLocation, MapKit, SwiftData, ActivityKit, UserNotifications, y CLGeocoder para la función opcional de geocoding inverso). Las prácticas de privacidad de Apple para estos frameworks se describen en la política de privacidad propia de Apple en <https://www.apple.com/legal/privacy/>. Cuando utilizas la función opcional de geocoding inverso, las coordenadas de tu turno se envían al servicio de geocodificación de Apple y están sujetas a las prácticas de privacidad de Apple, no a las del Desarrollador.
 
 ---
 
@@ -142,7 +140,7 @@ Si actualizamos esta Política de Privacidad en una versión futura de la App, l
 
 Si tienes preguntas sobre esta Política de Privacidad o sobre cómo la App maneja los datos, contacta al Desarrollador en:
 
-**Correo:** megashoponline826@gmail.com
+**Correo:** earnlydriver@gmail.com
 
 Normalmente respondemos en un plazo de 2 días hábiles.
 

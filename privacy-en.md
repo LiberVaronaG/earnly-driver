@@ -6,12 +6,12 @@ permalink: /privacy/
 
 # Privacy Policy
 
-**Last updated:** May 13, 2026
-**Effective date:** May 13, 2026
+**Last updated:** May 17, 2026
+**Effective date:** May 17, 2026
 
 Earnly Driver ("the App") is developed and operated by **Liber Varona** ("we," "us," or "the Developer"). This Privacy Policy describes how the App handles your information.
 
-**Summary:** Earnly Driver runs entirely on your iPhone. It has no servers, no user accounts, no analytics, and no advertising. Your shift data and location history never leave your device. We cannot see, access, or recover your data.
+**Summary:** Earnly Driver runs entirely on your iPhone. It has no servers, no user accounts, no analytics, and no advertising. Your shift data and location history stay on your device by default. The only data that ever leaves your device does so when you explicitly choose it — by exporting a CSV, or by turning on the optional "Look up shift addresses" setting (off by default), which sends only your shift start/end coordinates to Apple to resolve a street address. We cannot see, access, or recover your data, and the Developer never receives it.
 
 ---
 
@@ -21,18 +21,16 @@ Earnly Driver collects only the information you explicitly provide while using t
 
 ### 1.1 Shift information you enter
 - Shift block start and end times
-- Estimated and actual earnings (dollar amounts)
-- Tips
-- Mileage (when not tracked via GPS)
+- Mileage (when manually edited; otherwise calculated from GPS)
 - Personal notes you choose to add to a shift
-- Vehicle expenses you log
+- Reason for any edits you make to a saved shift (for audit trail purposes)
 
 ### 1.2 Location data (only during an active shift)
 When you tap **Start Shift**, the App begins recording your device's location in order to calculate distance driven, duration, and effective hourly rate. Location tracking automatically stops when you tap **End Shift**.
 
 - Location is collected **only** while a shift is active and you have explicitly started it.
 - Location is collected in the background so the App can keep tracking when your screen is locked or another app is open during your shift.
-- We do **not** transmit your location off the device under any circumstances.
+- We do **not** transmit your location off the device, with one optional exception you control: if you turn on **Look up shift addresses** in Settings (off by default), only the coordinates of your shift's start and end points are sent to Apple's geocoding service to resolve a street address. Nothing else is sent, and nothing is ever sent to the Developer. See Section 4.
 
 ### 1.3 Information we do NOT collect
 - We do not collect your name, email address, phone number, photo, or any other identifying information.
@@ -50,7 +48,7 @@ When you tap **Start Shift**, the App begins recording your device's location in
 All data described in Section 1 is stored **locally** on your iPhone using Apple's SwiftData framework. The data resides in the App's private sandbox container, encrypted at rest by iOS.
 
 - The data is **not** synced to iCloud unless and until a future version of the App offers that feature and you explicitly opt in. The current version does not sync any data anywhere.
-- The data is **not** transmitted to any server operated by the Developer or any third party.
+- Except for the optional address lookup described in Section 4, the data is **not** transmitted to any server. The Developer operates no server and never receives your data under any circumstances.
 - The data is included in your standard iPhone backup (iCloud Backup or encrypted local backup) only if you have those backups enabled in your iPhone Settings. Those backups are controlled entirely by Apple and your Apple ID; the Developer has no access to them.
 
 ---
@@ -59,10 +57,9 @@ All data described in Section 1 is stored **locally** on your iPhone using Apple
 
 The App uses the data you enter and the location data you authorize **only** for the purposes you started the App for:
 
-- Calculating total earnings per shift, per week, and per month
-- Calculating effective hourly rate (earnings ÷ time on shift)
-- Calculating cost per mile and net profit
-- Showing your shift history and earnings trends
+- Calculating total miles driven per shift, week, and month
+- Estimating your IRS mileage deduction based on the standard rate
+- Showing your shift history
 - Exporting your own data when you choose to (CSV export to the Files app or via Share Sheet)
 
 We do not use your data for any other purpose. We do not profile you, score you, sell insights about you, or share your data with anyone.
@@ -73,10 +70,11 @@ We do not use your data for any other purpose. We do not profile you, score you,
 
 We do **not** sell, rent, trade, or share your personal data with any third party.
 
-There are two situations in which your data may leave your device, and both occur only at your explicit direction:
+There are three situations in which your data may leave your device, and each occurs only at your explicit direction:
 
 1. **CSV export.** You can tap **Export Data** to generate a CSV file containing your shift history. The export is delivered via the iOS Share Sheet, and you choose where it goes (email, Files, AirDrop, etc.). Until you initiate this export and choose a destination, your data stays on your device.
 2. **Standard iPhone backup.** As noted in Section 2, your data is included in your iPhone's standard backup if you have backups enabled. This is governed by Apple's iCloud terms and your device settings, not by us.
+3. **Optional address lookup.** The **Look up shift addresses** setting is **off by default**. If you turn it on, then each time you end a shift the App sends only the start and end GPS coordinates of that shift to Apple's geocoding service to obtain a human-readable street address shown in Shift Detail. Only those two coordinate pairs are sent; no other shift data, and nothing to the Developer. You can turn this off at any time in Settings, and it never runs while it is off. This uses Apple's CLGeocoder and is subject to Apple's privacy terms.
 
 ---
 
@@ -128,7 +126,7 @@ Because we do not transmit or store your data on any server, there is no server-
 
 Earnly Driver does not integrate with any third-party SDKs, analytics platforms, advertising networks, or social media tools.
 
-Earnly Driver uses Apple's own frameworks (CoreLocation, MapKit, SwiftData, ActivityKit, UserNotifications). Apple's privacy practices for these frameworks are described in Apple's own privacy policy at <https://www.apple.com/legal/privacy/>.
+Earnly Driver uses Apple's own frameworks (CoreLocation, MapKit, SwiftData, ActivityKit, UserNotifications, and CLGeocoder for the optional reverse geocoding feature). Apple's privacy practices for these frameworks are described in Apple's own privacy policy at <https://www.apple.com/legal/privacy/>. When you use the optional reverse geocoding feature, your shift coordinates are sent to Apple's geocoding service and are subject to Apple's privacy practices, not the Developer's.
 
 ---
 
@@ -142,7 +140,7 @@ If we update this Privacy Policy in a future version of the App, the updated pol
 
 If you have questions about this Privacy Policy or about how the App handles data, contact the Developer at:
 
-**Email:** megashoponline826@gmail.com
+**Email:** earnlydriver@gmail.com
 
 We typically respond within 2 business days.
 

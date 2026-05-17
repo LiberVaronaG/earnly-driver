@@ -6,7 +6,7 @@ permalink: /support/
 
 # Earnly Driver — Support
 
-**Need help?** This page covers the most common questions. If your question isn't answered below, email **megashoponline826@gmail.com** and we'll get back to you within 2 business days.
+**Need help?** This page covers the most common questions. If your question isn't answered below, email **earnlydriver@gmail.com** and we'll get back to you within 2 business days.
 
 ---
 
@@ -71,7 +71,7 @@ Yes. Open any completed shift in the History tab and you'll see the full route d
 Earnings are not auto-detected (Amazon Flex doesn't expose them via API). You enter the dollar amount yourself when you end the shift, or by editing the shift afterward. Open the shift in History → Edit → Earnings.
 
 ### The app crashed / shows wrong data / froze
-Email **megashoponline826@gmail.com** with:
+Email **earnlydriver@gmail.com** with:
 - iPhone model and iOS version (Settings → General → About)
 - What you were doing when it happened
 - Approximate date and time of the issue
@@ -85,7 +85,7 @@ Delete the app from your iPhone (long-press the icon → Remove App → Delete A
 
 ## Contact
 
-**Email:** megashoponline826@gmail.com
+**Email:** earnlydriver@gmail.com
 **Response time:** within 2 business days (often faster)
 **Language:** English or Spanish — both are fine
 

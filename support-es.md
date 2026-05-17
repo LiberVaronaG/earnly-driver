@@ -6,7 +6,7 @@ permalink: /soporte/
 
 # Earnly Driver — Soporte
 
-**¿Necesitas ayuda?** Esta página cubre las preguntas más comunes. Si tu pregunta no está aquí, escribe a **megashoponline826@gmail.com** y respondemos en un máximo de 2 días hábiles.
+**¿Necesitas ayuda?** Esta página cubre las preguntas más comunes. Si tu pregunta no está aquí, escribe a **earnlydriver@gmail.com** y respondemos en un máximo de 2 días hábiles.
 
 ---
 
@@ -71,7 +71,7 @@ Sí. Abre cualquier turno completado en la pestaña Historial y verás la ruta c
 Las ganancias no se detectan automáticamente (Amazon Flex no las expone vía API). Tú ingresas el monto en dólares cuando finalizas el turno, o editando el turno después. Abre el turno en Historial → Editar → Ganancias.
 
 ### La app se cerró / muestra datos incorrectos / se congeló
-Escribe a **megashoponline826@gmail.com** con:
+Escribe a **earnlydriver@gmail.com** con:
 - Modelo de iPhone y versión de iOS (Ajustes → General → Información)
 - Qué estabas haciendo cuando ocurrió
 - Fecha y hora aproximada del problema
@@ -85,7 +85,7 @@ Desinstala la app de tu iPhone (mantén presionado el ícono → Eliminar App �
 
 ## Contacto
 
-**Correo:** megashoponline826@gmail.com
+**Correo:** earnlydriver@gmail.com
 **Tiempo de respuesta:** dentro de 2 días hábiles (a menudo más rápido)
 **Idioma:** Inglés o Español — los dos están bien
 

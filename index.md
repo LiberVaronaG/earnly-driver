@@ -23,6 +23,6 @@ Independent iOS app — no accounts, no servers, your data stays on your iPhone.
 
 ---
 
-**Contact:** megashoponline826@gmail.com
+**Contact:** earnlydriver@gmail.com
 
 *Earnly Driver is an independent app and is not affiliated with, endorsed by, or sponsored by Amazon.com, Inc. or any of its subsidiaries.*
