@@ -2,7 +2,7 @@
 
 This folder contains the static site that hosts Earnly Driver's Privacy Policy and Support page. Apple requires both URLs to submit the app, so this is a hard blocker for the App Store submission.
 
-The site is built with Jekyll (which GitHub Pages renders for free, no build setup needed on your side).
+The site is built with Jekyll (which GitHub Pages renders for free, no build setup needed on your side). It uses a custom branded layout — no third-party theme.
 
 ## Files
 
@@ -11,8 +11,11 @@ The site is built with Jekyll (which GitHub Pages renders for free, no build set
 | `index.md` | `/` |
 | `privacy-en.md` | `/privacy/` |
 | `privacy-es.md` | `/privacidad/` |
+| `terms-en.md` | `/terms/` |
+| `terms-es.md` | `/terminos/` |
 | `support-en.md` | `/support/` |
 | `support-es.md` | `/soporte/` |
+| `_layouts/default.html` | (custom branded layout + CSS — not a public page) |
 | `_config.yml` | (Jekyll config — not a public page) |
 
 The permalink for each page is set inside the file's frontmatter, so the final URL doesn't depend on the filename.

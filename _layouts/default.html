@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="{% if page.url contains 'idad' or page.url contains 'soporte' or page.url contains 'terminos' %}es{% else %}en{% endif %}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <style>
+    :root {
+      --brand: #2D6B30;
+      --brand-hover: #3F9442;
+      --bg: #F5EFE6;
+      --surface: #ffffff;
+      --border: #e3dac9;
+      --text: #1c1a17;
+      --text-soft: #5f574c;
+      --shadow: 0 1px 3px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.05);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand: #4FA653;
+        --brand-hover: #6BC06F;
+        --bg: #1A1614;
+        --surface: #241f1c;
+        --border: #3a322c;
+        --text: #f1ece4;
+        --text-soft: #b0a799;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      font-size: 17px;
+    }
+    .site-header {
+      background: var(--brand);
+      color: #fff;
+      padding: 40px 24px 36px;
+      text-align: center;
+    }
+    .site-header .wordmark {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      margin: 0;
+    }
+    .site-header .tagline {
+      margin: 6px 0 0;
+      font-size: .98rem;
+      opacity: .9;
+      font-weight: 400;
+    }
+    nav.site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4px;
+      padding: 14px 16px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav.site-nav a {
+      color: var(--text-soft);
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 500;
+      padding: 7px 14px;
+      border-radius: 8px;
+      transition: background .15s, color .15s;
+    }
+    nav.site-nav a:hover { color: var(--brand-hover); }
+    nav.site-nav a.active {
+      background: var(--brand);
+      color: #fff;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 24px;
+    }
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 40px 36px;
+    }
+    .content h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      margin: 0 0 20px;
+      line-height: 1.25;
+    }
+    .content h2 {
+      font-size: 1.25rem;
+      font-weight: 650;
+      margin: 36px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+    .content h3 {
+      font-size: 1.05rem;
+      font-weight: 650;
+      margin: 22px 0 8px;
+    }
+    .content h1 + h2,
+    .content h2:first-of-type { border-top: none; padding-top: 0; }
+    .content p, .content li { color: var(--text); }
+    .content a { color: var(--brand-hover); }
+    .content strong { font-weight: 650; }
+    .content hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .content ul { padding-left: 22px; }
+    .content li { margin: 5px 0; }
+    .content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: .92rem;
+    }
+    .content th, .content td {
+      text-align: left;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .content th {
+      background: var(--bg);
+      font-weight: 650;
+    }
+    .content blockquote {
+      margin: 16px 0;
+      padding: 12px 18px;
+      border-left: 3px solid var(--brand);
+      background: var(--bg);
+      border-radius: 0 8px 8px 0;
+      color: var(--text-soft);
+    }
+    .content code {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 1px 6px;
+      font-size: .88em;
+    }
+    .content em { color: var(--text-soft); }
+    .home-links {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0;
+    }
+    .home-links li { margin: 10px 0; }
+    .home-links a {
+      display: block;
+      padding: 14px 18px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      transition: border-color .15s, transform .05s;
+    }
+    .home-links a:hover { border-color: var(--brand); }
+    .home-links a:active { transform: scale(.995); }
+    footer.site-footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px;
+      text-align: center;
+      color: var(--text-soft);
+      font-size: .82rem;
+      line-height: 1.6;
+    }
+    footer.site-footer a { color: var(--brand-hover); }
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      main { padding: 24px 14px; }
+      .content { padding: 26px 20px; border-radius: 12px; }
+      .content h1 { font-size: 1.5rem; }
+      .content table { font-size: .85rem; }
+      .content th, .content td { padding: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <p class="wordmark">Earnly Driver</p>
+    <p class="tagline">Know your real $/hour. On-device. No accounts, no servers.</p>
+  </header>
+
+  <nav class="site-nav">
+    <a href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+    <a href="/privacy/" {% if page.url == '/privacy/' %}class="active"{% endif %}>Privacy</a>
+    <a href="/terms/" {% if page.url == '/terms/' %}class="active"{% endif %}>Terms</a>
+    <a href="/support/" {% if page.url == '/support/' %}class="active"{% endif %}>Support</a>
+    <a href="/privacidad/" {% if page.url == '/privacidad/' %}class="active"{% endif %}>Privacidad</a>
+    <a href="/terminos/" {% if page.url == '/terminos/' %}class="active"{% endif %}>Términos</a>
+    <a href="/soporte/" {% if page.url == '/soporte/' %}class="active"{% endif %}>Soporte</a>
+  </nav>
+
+  <main>
+    <article class="content">
+      {{ content }}
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Liber Varona &middot; <a href="mailto:earnlydriver@gmail.com">earnlydriver@gmail.com</a></p>
+    <p>Earnly Driver is an independent app and is not affiliated with, endorsed by, or sponsored by Amazon.com, Inc. or any other delivery or rideshare platform.</p>
+  </footer>
+</body>
+</html>

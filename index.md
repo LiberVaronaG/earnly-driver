@@ -6,23 +6,26 @@ permalink: /
 
 # Earnly Driver
 
-**Track your real $/hour as an Amazon Flex driver.**
-Independent iOS app — no accounts, no servers, your data stays on your iPhone.
+Earnly Driver helps gig and delivery drivers — Amazon Flex, Uber, Lyft, DoorDash, Instacart, Spark Driver, GrubHub — see what they really earn per hour, after time and miles.
 
----
+It runs entirely on your iPhone. No accounts, no servers, no analytics. Your data stays on your device.
 
 ## English
 
-- [Privacy Policy](/privacy/)
-- [Support](/support/)
+<ul class="home-links">
+  <li><a href="/privacy/">Privacy Policy &rarr;</a></li>
+  <li><a href="/terms/">Terms of Use &rarr;</a></li>
+  <li><a href="/support/">Support &amp; FAQ &rarr;</a></li>
+</ul>
 
 ## Español
 
-- [Política de Privacidad](/privacidad/)
-- [Soporte](/soporte/)
+<ul class="home-links">
+  <li><a href="/privacidad/">Política de Privacidad &rarr;</a></li>
+  <li><a href="/terminos/">Términos de Uso &rarr;</a></li>
+  <li><a href="/soporte/">Soporte y Preguntas Frecuentes &rarr;</a></li>
+</ul>
 
 ---
 
-**Contact:** earnlydriver@gmail.com
-
-*Earnly Driver is an independent app and is not affiliated with, endorsed by, or sponsored by Amazon.com, Inc. or any of its subsidiaries.*
+**Contact:** [earnlydriver@gmail.com](mailto:earnlydriver@gmail.com)
