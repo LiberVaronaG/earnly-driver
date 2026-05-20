@@ -1,6 +1,8 @@
 title: Earnly Driver
 description: Know your real $/hour as a gig and delivery driver — on-device, no accounts, no servers.
 
+baseurl: /earnly-driver
+
 permalink: pretty
 
 defaults:
