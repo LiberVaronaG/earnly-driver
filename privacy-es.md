@@ -106,7 +106,8 @@ Hay tres situaciones en las que tus datos pueden salir de tu dispositivo, y cada
 
 Como todos los datos permanecen en tu dispositivo, tienes control completo:
 
-- **Eliminar un turno o viaje personal:** Ábrelo en la pestaña Historial y elimínalo. Los elementos eliminados van a la Papelera y pueden restaurarse durante 30 días, tras lo cual se eliminan permanentemente.
+- **Eliminar un turno:** Ábrelo en la pestaña Historial y elimínalo. Los turnos eliminados van a la Papelera y pueden restaurarse durante 30 días, tras lo cual se eliminan permanentemente.
+- **Eliminar un viaje personal:** Ábrelo en la pestaña Historial y elimínalo. Los viajes personales se eliminan de inmediato y no se pueden restaurar.
 - **Eliminar todos los datos:** Elimina la App de tu iPhone. Todos los datos se borran con la App según las reglas del sandbox de iOS.
 - **Revocar el acceso a la ubicación:** Ve a **Ajustes → Privacidad y Seguridad → Localización → Earnly Driver** y cambia los permisos en cualquier momento. Ten en cuenta que desactivar la ubicación mientras un turno está activo impedirá que la App calcule la distancia de ese turno.
 - **Revocar el acceso al movimiento:** Ve a **Ajustes → Privacidad y Seguridad → Movimiento y Forma Física** y cambia el permiso en cualquier momento. También puedes desactivar **Trackear millas personales automáticamente** directamente en los Ajustes de la App.

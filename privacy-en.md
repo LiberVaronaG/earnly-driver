@@ -106,7 +106,8 @@ There are three situations in which your data may leave your device, and each oc
 
 Because all data stays on your device, you have complete control:
 
-- **Delete a shift or personal trip:** Open it in the History tab and delete it. Deleted items go to Trash and can be restored for 30 days, after which they are permanently removed.
+- **Delete a shift:** Open it in the History tab and delete it. Deleted shifts go to Trash and can be restored for 30 days, after which they are permanently removed.
+- **Delete a personal trip:** Open it in the History tab and delete it. Personal trips are removed immediately and cannot be restored.
 - **Delete all data:** Delete the App from your iPhone. All data is removed with the App per iOS sandbox rules.
 - **Revoke location access:** Go to **Settings → Privacy & Security → Location Services → Earnly Driver** and change permissions at any time. Note that disabling location while a shift is active will prevent the App from calculating distance for that shift.
 - **Revoke motion access:** Go to **Settings → Privacy & Security → Motion & Fitness** and change the permission at any time. You can also turn off **Auto-track personal miles** directly in the App's Settings.
